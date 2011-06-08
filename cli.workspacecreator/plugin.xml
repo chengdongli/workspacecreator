@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="CLI Category"
+            id="cli.workspacecreator.commands.category">
+      </category>
+      <command
+            name="%CLI_Menu_Setup"
+            categoryId="cli.workspacecreator.commands.category"
+            id="cli.workspacecreator.commands.setupCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="cli.workspacecreator.commands.setupCommand"
+            class="cli.workspacecreator.handlers.SetupHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="cli.workspacecreator.commands.setupCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:help?after=additions">
+         <menu
+               label="%CLI_Menu_Setup"
+               mnemonic="M"
+               id="cli.workspacecreator.menus.setupMenu">
+         </menu>
+         <command
+               commandId="cli.workspacecreator.commands.setupCommand"
+               id="cli.workspacecreator.menus.setupCommand"
+               mnemonic="S">
+         </command>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="cli.workspacecreator.toolbars.setupToolbar">
+            <command
+                  commandId="cli.workspacecreator.commands.setupCommand"
+                  id="cli.workspacecreator.menus.setupCommand"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commandImages">
+      <image
+            commandId="cli.workspacecreator.commands.setupCommand"
+            icon="icons/logo-red-16.gif">
+      </image>
+   </extension>
+   <!--extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="biz.tradescape.workspacecreator.Starter">
+      </startup>
+   </extension-->
+
+</plugin>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/cli.setup.feature_1.0.0.qualifier.jar" id="cli.setup.feature" version="1.0.0.qualifier">
+      <category name="setup_category"/>
+   </feature>
+   <category-def name="setup_category" label="Setup Category">
+      <description>
+         Setup category description.
+      </description>
+   </category-def>
+</site>
