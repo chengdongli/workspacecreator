@@ -212,9 +212,6 @@ public class ProjectSetPage extends AbstractSetupWizardPage {
                 btnConfigFile.getSelection() ? txtConfigFile.getText() : txtConfigUrl.getText());
     }
 
-    /* (non-Javadoc)
-     * @see biz.tradescape.workspacecreator.wizards.AbstractSetupWizardPage#restoreFromSettings()
-     */
     @Override
     protected void restoreFromSettings() {
         String fetchMode = getDialogSettings().get(SetupWizard.PROJECT_SET_SOURCE);

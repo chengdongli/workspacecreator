@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 public class Activator extends AbstractUIPlugin {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "biz.tradescape.workspacecreator"; //$NON-NLS-1$
+	public static final String PLUGIN_ID = "cli.workspacecreator"; //$NON-NLS-1$
 
 	// The shared instance
 	private static Activator plugin;

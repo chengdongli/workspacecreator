@@ -39,7 +39,7 @@ public class Starter implements IStartup {
 	 * 
 	 */
 	private void loadConfig() {
-//	    String path = System.getProperty("biz.tradescape.config");
+//	    String path = System.getProperty("cli.config");
 //	    if (path != null)
 //	    {
 //	      loader = getLoaderFromPath(path);

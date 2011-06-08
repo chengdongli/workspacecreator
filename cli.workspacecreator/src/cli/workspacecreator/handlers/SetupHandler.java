@@ -150,20 +150,6 @@ public class SetupHandler extends AbstractHandler {
         return Status.OK_STATUS;
     }
 
-//    private List<String> getProjecNames() {
-//        List<String> prjNames = new ArrayList<String>();
-//        File cfgFile = new File(destLocalPath+File.separator+"biz.tradescape.mmt.application.rcp"+File.separator+"Marketplace RCP.launch");
-//        if(cfgFile.exists()){
-//            try {
-//                InputStream stream=new FileInputStream(cfgFile);
-//                prjNames.addAll(Util.getProjectNames(stream));
-//            } catch (FileNotFoundException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        return prjNames;
-//    }
-
 }
 
 //        IRepositoryContainer trunk = SVNUtility.getProposedTrunk(this.location);
